@@ -7,6 +7,7 @@
   margin-top: 20px;
   padding-top:115px;
   box-sizing: border-box;
+  color:rgb(110, 109, 109)
 }
 
 a{
@@ -15,6 +16,11 @@ a{
 }
 
 button{
-  margin: 5px;
+  margin: 8px;
+  padding: 5px;
   cursor: pointer;
+  color: brown;
+  background-color: rgb(113, 192, 192);
+  border: none;
+  border-radius: 2px;
 }

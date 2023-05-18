@@ -6,6 +6,8 @@ const reducer = (state,action)=>{
             return state+1;
         case "subtract":
             return state-1;
+        case "reset":
+            return state=0;
         default:
             throw new Error("Invalid Action");
     }
@@ -16,9 +18,10 @@ function AddSubtract(){
 
     return(
         <div>
-            <h3>{count}</h3>
+            <h3>Value : {count}</h3>
             <button onClick={()=> dispatch('add')}>Add</button>
             <button onClick={()=> dispatch('subtract')}>Subtract</button>
+            <button onClick={()=> dispatch('reset')}>Reset</button>
         </div>
     )
 }
